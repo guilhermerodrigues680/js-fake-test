@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Test</title>
+  <!-- https://www.jsdelivr.com/package/npm/modern-normalize -->
+  <link rel="stylesheet" href="modern-normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- https://stackoverflow.com/questions/8330559/hover-effects-using-css3-touch-events -->
+<body ontouchstart="">
+  <div class="control-panel">
+    <button id="btn-run-tests" class="btn">Run tests</button>
+    <span id="spinner-run-tests" class="spinner" style="display: none;"></span>
+  </div>
+  <div id="terminal" class="terminal">
+    <!-- As linhas do terminal são adicionadas via código -->
+    <!-- <p class="terminal__line">
+      <span class="terminal__text terminal__text--fg-red">✖</span>
+      <span class="terminal__text terminal__text--fg-black-bg-red">&nbsp;FAIL&nbsp;</span>
+      Test 0 (402 ms)
+    </p>
+    <p class="terminal__line">
+      <span class="terminal__text terminal__text--fg-green">✓</span>
+      <span class="terminal__text terminal__text--fg-black-bg-green">&nbsp;PASS&nbsp;</span>
+      Test 0 (402 ms)
+    </p> -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

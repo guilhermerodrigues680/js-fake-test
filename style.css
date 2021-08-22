@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&display=swap");
+p {
+  margin: 0;
+}
+
+html, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #000000;
+  font-family: 'Inconsolata', monospace;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 1.125rem;
+  color: white;
+  border-radius: 0.25rem;
+  background: #81add4;
+  -webkit-transition: all ease-out 0.15s;
+  transition: all ease-out 0.15s;
+}
+
+.btn:disabled {
+  color: rgba(255, 255, 255, 0.2);
+  background: rgba(129, 173, 212, 0.2);
+}
+
+.spinner {
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: #5bd5d7;
+  -webkit-animation: spin 0.85s cubic-bezier(0.43, 0.84, 0.61, 0.14) infinite;
+          animation: spin 0.85s cubic-bezier(0.43, 0.84, 0.61, 0.14) infinite;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+.control-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  background: #000000;
+}
+
+@media (min-width: 768px) {
+  .control-panel {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.control-panel .spinner {
+  margin-left: 1rem;
+}
+
+.terminal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #ffffff;
+  padding: 1rem;
+  background: #000000;
+}
+
+.terminal .terminal__line {
+  margin: -0.0625rem 0rem;
+}
+
+.terminal .terminal__text--fg-green {
+  color: #5ea72a;
+}
+
+.terminal .terminal__text--fg-black-bg-green {
+  font-weight: 500;
+  color: #000000;
+  background: #5ea72a;
+}
+
+.terminal .terminal__text--fg-red {
+  color: #d8322d;
+}
+
+.terminal .terminal__text--fg-black-bg-red {
+  font-weight: 500;
+  color: #000000;
+  background: #d8322d;
+}
+/*# sourceMappingURL=style.css.map */
